@@ -155,9 +155,10 @@ This configuration requires about 23G GPU memory for 13B LLM and 11.5G GPU memor
 For more powerful GPUs, you can run the model
 in 16 bit by setting `low_resource` to `False` in the relevant config file:
 
-* MiniGPT-v2: [minigptv2_eval.yaml](eval_configs/minigptv2_eval.yaml#6) 
+* MiniGPT-v2: [minigptv2_eval.yaml](eval_configs/minigptv2_eval.yaml#6)
 * MiniGPT-4 (Llama2): [minigpt4_llama2_eval.yaml](eval_configs/minigpt4_llama2_eval.yaml#6)
 * MiniGPT-4 (Vicuna): [minigpt4_eval.yaml](eval_configs/minigpt4_eval.yaml#6)
+* MiniGPT-4 (Llama3.1 VQA): [minigpt4_llama3_vqa_finetune.yaml](train_configs/minigpt4_llama3_vqa_finetune.yaml)
 
 Thanks [@WangRongsheng](https://github.com/WangRongsheng), you can also run MiniGPT-4 on [Colab](https://colab.research.google.com/drive/1OK4kYsZphwt5DXchKkzMBjYF6jnkqh4R?usp=sharing)
 

@@ -38,4 +38,13 @@ Then, run the following command. In our experiments, we use 1 A100.
 torchrun --nproc-per-node NUM_GPU train.py --cfg-path train_configs/minigpt4_stage2_finetune.yaml
 ```
 
-After the second stage alignment, MiniGPT-4 is able to talk about the image coherently and user-friendly. 
+After the second stage alignment, MiniGPT-4 is able to talk about the image coherently and user-friendly.
+
+## Training Llama 3.1 on VQAv2
+
+To finetune MiniGPT-4 with Llama&nbsp;3.1 on the VQAv2 dataset, set up the paths in
+`train_configs/minigpt4_llama3_vqa_finetune.yaml` and launch training with:
+
+```bash
+torchrun --nproc-per-node NUM_GPU train.py --cfg-path train_configs/minigpt4_llama3_vqa_finetune.yaml
+```

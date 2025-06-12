@@ -127,6 +127,17 @@ CONV_VISION_LLama2 = Conversation(
     sep="",
 )
 
+CONV_VISION_LLama3 = Conversation(
+    system="<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n"
+           "Give the following image: <Img>ImageContent</Img>. "
+           "You will be able to see the image once I provide it to you. Please answer my questions.",
+    roles=("<|start_header_id|>user<|end_header_id|>\n", "<|start_header_id|>assistant<|end_header_id|>\n"),
+    messages=[],
+    offset=2,
+    sep_style=SeparatorStyle.SINGLE,
+    sep="<|eot_id|>",
+)
+
 CONV_VISION_minigptv2 = Conversation(
     system="",
     roles=("<s>[INST] ", " [/INST]"),
