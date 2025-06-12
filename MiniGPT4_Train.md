@@ -48,3 +48,16 @@ To finetune MiniGPT-4 with Llama&nbsp;3.1 on the VQAv2 dataset, set up the paths
 ```bash
 torchrun --nproc-per-node NUM_GPU train.py --cfg-path train_configs/minigpt4_llama3_vqa_finetune.yaml
 ```
+
+## Training Llama 3 from Scratch
+
+MiniGPT-4 can also be trained from scratch using Llama&nbsp;3. The process
+includes the same two-stage alignment. Launch the stages with:
+
+```bash
+bash train_llama3_from_scratch.sh NUM_GPU
+```
+
+The script runs stage&nbsp;1 using
+`train_configs/minigpt4_llama3_stage1_pretrain.yaml` followed by stage&nbsp;2
+with `train_configs/minigpt4_llama3_stage2_finetune.yaml`.
