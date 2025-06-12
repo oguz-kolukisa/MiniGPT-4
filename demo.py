@@ -52,8 +52,11 @@ def setup_seeds(config):
 #             Model Initialization
 # ========================================
 
-conv_dict = {'pretrain_vicuna0': CONV_VISION_Vicuna0,
-             'pretrain_llama2': CONV_VISION_LLama2}
+conv_dict = {
+    'pretrain_vicuna0': CONV_VISION_Vicuna0,
+    'pretrain_llama2': CONV_VISION_LLama2,
+    'pretrain_llama3': CONV_VISION_LLama3,
+}
 
 print('Initializing Chat')
 args = parse_args()
